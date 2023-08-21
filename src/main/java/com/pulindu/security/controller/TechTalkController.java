@@ -21,11 +21,21 @@ public class TechTalkController {
         return "See you soon!";
     }
 
-    @GetMapping(path = "/private/sensitive-data")
+    @GetMapping(path = "/private/admins/sensitive-data")
     public Response sensitiveData(){
         return new Response(
                 "Pulindu",
                 "Pulindu@123"
         );
+    }
+
+    @GetMapping(path = "/private/users/user-data")
+    public String userData(){
+        return "These data can be accessed by an USER or an ADMIN";
+    }
+
+    @GetMapping(path = "/private/admins/admin-data")
+    public String adminData(){
+        return "These data can be only accessed by an ADMIN";
     }
 }
