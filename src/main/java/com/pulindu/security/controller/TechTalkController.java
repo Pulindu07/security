@@ -21,11 +21,11 @@ public class TechTalkController {
         return "See you soon!";
     }
 
-//    @GetMapping(path = "/private/sensitive-data")
-//    public Response sensitiveData(){
-//        return new Response(
-//                "Pulindu",
-//                "Pulindu@123"
-//        );
-//    }
+    @GetMapping(path = "/private/sensitive-data")
+    public Response sensitiveData(){
+        return new Response(
+                "Pulindu",
+                "Pulindu@123"
+        );
+    }
 }
